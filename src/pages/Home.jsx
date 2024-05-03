@@ -1,17 +1,23 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import FetchData from '../components/Fetchdata/FetchData';
+import React from "react";
+import Header from "../components/Header/Header";
+import FetchData from "../components/Fetchdata/FetchData";
+import Footer from "../components/Footer/Footer";
 
-function Home(){
-    return(
+function Home() {
+  return (
     <>
-    <h1>Home</h1>
-    <FetchData />
-    <Link to="/about">
-        <button>About</button>
-      </Link>
+      <Header />
+      <div className="wrapper">
+        <section>
+          <h1>Hi!, I am Baran Bulduk</h1>
+          <h1>Front End Developer</h1>
+        </section>
+        <h2>My Projects</h2>
+        <FetchData />
+      </div>
+      <Footer />
     </>
-    );
+  );
 }
 
 export default Home;
