@@ -1,0 +1,16 @@
+.competence_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 1080px;
+    gap: 20px;
+}
+
+.competence {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+}

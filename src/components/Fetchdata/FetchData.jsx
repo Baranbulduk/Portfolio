@@ -1,5 +1,6 @@
-import React, { useState } from "react";
 import "./FetchData.css";
+import React, { useState } from "react";
+
 
 function FetchData() {
   const URL = "https://api.github.com/users/baranbulduk/repos";

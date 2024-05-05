@@ -9,7 +9,10 @@ function Contact() {
       <Header />
       <div className="wrapper">
         <h2>Contact</h2>
-        <p>Write in the form!</p>
+        <p>
+          If you have any further questions,
+          <br /> don't hesitate to send me a message!
+        </p>
         <Form />
       </div>
       <Footer />

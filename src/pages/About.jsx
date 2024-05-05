@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header/Header";
+import Competence from "../components/Competence/Competence";
 import Footer from "../components/Footer/Footer";
 
 function About() {
@@ -19,8 +20,21 @@ function About() {
             alias error eaque velit unde laudantium porro.
           </p>
         </section>
+
         <h3>Comptence</h3>
-        <h6>Component-Competence</h6>
+        <section className="competence_container">
+          <Competence src="htmlLogo.png" title="HTML" experience="2" />
+          <Competence title="CSS" experience="2" />
+          <Competence title="JavaScript" experience="1" />
+          <Competence title="React" experience="1" />
+          <Competence title="Node.js" experience="1" />
+          <Competence title="Git" experience="1" />
+          <Competence title="Figma" experience="1" />
+          <Competence title="Scrum" experience="1" />
+          <Competence title="Wordpress" experience="1" />
+          <Competence title="Adobe" experience="2" />
+        </section>
+
         <h3>Work Experience</h3>
         <h3>Education</h3>
       </div>
