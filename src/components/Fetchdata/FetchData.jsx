@@ -16,9 +16,9 @@ function FetchData() {
   }, []);
 
   return (
-    <section className="projects-container">
+    <section className="projects_container">
       {data.map((repo) => (
-        <article  key={repo.id}>
+        <article className="project_article" key={repo.id}>
           <a href={repo.html_url}>
             <img
               className="project_image"

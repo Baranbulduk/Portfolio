@@ -1,3 +1,26 @@
 .header {
-    background-color: rgb(207, 224, 239);
+    display: flex;
+    height: 60px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+}
+
+.navigation_links {
+    text-decoration: none;
+    color: black;
+    margin: 0 20px;
+}
+
+.navigation_links:hover {
+    color: rgb(122, 135, 1);
+}
+
+.button_theme {
+    padding: 5px;
+    margin-left: 20px;
 }
