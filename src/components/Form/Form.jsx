@@ -1,11 +1,16 @@
 import "./Form.css";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 function Form() {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");
   const [message, setMessage] = useState("");
+  const nameInputRef = useRef(null);
+
+  useEffect(() => {
+    nameInputRef.current.focus();
+  }, []); // Gör att namn-input fokuserar när användaren kommer till Kontakt-sidan
 
   function handleFullName(event) {
     setFullName(event.target.value);
@@ -45,7 +50,9 @@ function Form() {
   return (
     <form className="form" onSubmit={handleSubmit}>
       <label>Fullname:</label>
-      <input type="text" value={fullName} onChange={handleFullName} />
+      <input type="text" value={fullName} onChange={handleFullName} 
+      ref={nameInputRef}
+      />
 
       <label>Email:</label>
       <input type="email" value={email} onChange={handleEmail} />
