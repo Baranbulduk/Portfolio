@@ -15,7 +15,7 @@ function Home() {
           hero_image_role" >FRONTEND DEVELOPER</h1>
         </section>
         <div className="wrapper">
-        <h2>My Projects</h2>
+        <h2>MY PROJECTS</h2>
         <FetchData />
       </div>
       <Footer />

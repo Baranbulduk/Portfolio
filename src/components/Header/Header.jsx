@@ -14,9 +14,9 @@ function Header() {
           <Link className="logo" to="/"><h1>BARAN BULDUK</h1></Link>
           
          <nav className="navigation">
-            <Link className="navigation_links" to="/">Home</Link>
-            <Link className="navigation_links" to="/about">About Me</Link>
-            <Link className="navigation_links" to="/contact">Contact</Link>
+            <Link className="navigation_links" to="/">HOME</Link>
+            <Link className="navigation_links" to="/about">ABOUT ME</Link>
+            <Link className="navigation_links" to="/contact">CONTACT</Link>
             <ThemeToggler />
           </nav>
           

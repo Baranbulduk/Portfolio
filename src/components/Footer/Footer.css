@@ -1,3 +1,58 @@
 .footer {
-    background-color: aquamarine;
+  background-color: #ebebeb;
+}
+
+.info_container {
+  padding: 50px 0 30px 0;
+  display: flex;
+  width: 800px;
+}
+
+.email_container,
+.telNr_container,
+.location_container {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  border-radius: 5px;
+}
+
+.email_container {
+  width: 270px;
+}
+
+.telNr_container {
+  width: 200px;
+}
+
+.location_container {
+  width: 180px;
+}
+
+.email_image,
+.telNr_image,
+.location_image,
+.github_image,
+.linkedIn_image {
+  width: 25px;
+}
+
+.email_image {
+  margin-right: -10px;
+}
+
+.telNr_image {
+  margin-right: -20px;
+}
+
+.location_image {
+  margin-right: -30px;
+}
+
+.apps_container {
+    margin-bottom: 20px;
+  display: flex;
+  width: 80px;
 }

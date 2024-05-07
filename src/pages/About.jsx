@@ -19,7 +19,7 @@ function About() {
     <>
       <Header />
       <div className="wrapper">
-        <h2>About Me</h2>
+        <h2>ABOUT ME</h2>
         <section>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
@@ -32,7 +32,7 @@ function About() {
           </p>
         </section>
 
-        <h3>Comptence</h3>
+        <h3>COMPETENCE</h3>
         <section className="competence_container">
           <Competence image={htmlLogo} title="HTML" experience="2" />
           <Competence image={cssLogo} title="CSS" experience="2" />
