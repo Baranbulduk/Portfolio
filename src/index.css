@@ -1,20 +1,19 @@
 .theme-light {
+  background-color: #fff;
+  color: #333;
+  height: 100%;
+
+  header {
     background-color: #fff;
-    color: #333;
-    height: 100%;
-
-    .darkLogo {
-      display: none;
-    }
   }
-  
-  .theme-dark {
-    background-color: #012e89;
-    color: #fff;
-    height: 100%;
+}
 
-    .lightLogo {
-      display: none;
-    }
+.theme-dark {
+  background-color: #012e89;
+  color: #fff;
+  height: 100%;
+
+  header {
+    background-color: black;
   }
-
+}

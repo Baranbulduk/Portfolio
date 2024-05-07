@@ -1,0 +1,33 @@
+.work_education_experience {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px auto;
+}
+
+.section_container {
+    border: 1px solid #ebebeb;
+    width: 400px;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+}
+
+.section_title {
+    background-color: #ebebeb;
+    border: 1px solid #ebebeb;
+    height: 50px;
+    width: 440px;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience_title {
+    font-size: 16px;
+}
+
+.experience_year {
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 20px;
+}

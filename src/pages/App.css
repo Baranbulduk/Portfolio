@@ -7,9 +7,35 @@
     padding: 0 50px;
 }
 
-.lightLogo, .darkLogo {
-    margin-left: 0px;
+/* HOME */
+.hero_image_container {
+    position: relative;
 }
+
+.hero_image {
+    width: 100%;
+    height: 500px;
+}
+
+.hero_image_name, .hero_image_role {
+    position: absolute;
+    color: white;
+  }
+
+.hero_image_name {
+    font-size: 36px;
+    letter-spacing: 3px;
+    top: 40%;
+    left: 37.0%;
+}
+
+.hero_image_role {
+    color: rgb(95, 95, 95);
+    letter-spacing: 2px;
+    top: 48%;
+    left: 37.1%;    
+}
+/* HOME END */
 
 h2, h3, p {
     text-align: center;
@@ -17,9 +43,4 @@ h2, h3, p {
 
 h2 {
     margin: 10px 0;
-}
-
-.work_education_experience {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
 }

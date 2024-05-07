@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header/Header";
 import Competence from "../components/Competence/Competence";
+import Experience from '../components/Experience/Experience';
 import Footer from "../components/Footer/Footer";
 import htmlLogo from "../assests/htmlLogo.png";
 import cssLogo from "../assests/cssLogo.png";
@@ -48,18 +49,8 @@ function About() {
           <Competence image={wordpressLogo} title="Wordpress" experience="1" />
           <Competence image={adobeLogo} title="Adobe" experience="2" />
         </section>
-        <section className="work_education_experience">
-          <div>
-            <h3>Work Experience</h3>
-            <h6>Title</h6>
-            <p>Year</p>
-          </div>
-          <div>
-            <h3>Education</h3>
-            <h6>Title</h6>
-            <p>Year</p>
-          </div>
-        </section>
+        <Experience />
+       
       </div>
       <Footer />
     </>
