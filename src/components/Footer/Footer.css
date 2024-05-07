@@ -3,19 +3,19 @@
 }
 
 .info_container {
-  padding: 50px 0 30px 0;
+  padding: 50px 0 20px 0;
   display: flex;
-  width: 800px;
+  width: 700px;
 }
 
 .email_container,
 .telNr_container,
 .location_container {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 0px;
+  padding: 8px 0px;
   border-radius: 5px;
 }
 
@@ -36,7 +36,7 @@
 .location_image,
 .github_image,
 .linkedIn_image {
-  width: 25px;
+  width: 23px;
 }
 
 .email_image {
@@ -52,7 +52,12 @@
 }
 
 .apps_container {
-    margin-bottom: 20px;
+  margin-bottom: 50px;
   display: flex;
   width: 80px;
+}
+
+.copyright {
+  font-size: 10px;
+  padding-bottom: 10px;
 }

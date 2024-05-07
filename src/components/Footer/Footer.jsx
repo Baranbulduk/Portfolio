@@ -27,7 +27,7 @@ function Footer() {
             <img className="github_image" src={Github} alt="Github" />
             <img className="linkedIn_image" src={Linkedin} alt="Linkedin" />
           </div>
-          <p>@COPYRIGHT {new Date().getFullYear()}</p>
+          <p className="copyright">@COPYRIGHT {new Date().getFullYear()}</p>
         </div>
     </footer>
   );
