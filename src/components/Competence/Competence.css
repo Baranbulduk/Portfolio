@@ -2,20 +2,21 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     width: 1080px;
-    gap: 10px;
+    margin: 20px auto;
 }
 
 .competence {
-    background-color: lightblue;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 150px;
-    width: 150px;
-    border-radius: 5px;
+    align-items: center;
+    height: 70px;
 }
 
 .competence_logo {
-    width: 50px;
-    margin-bottom: 10px;
+    width: 30px;
+    margin: 0 5px 0 0;
 }
+
+.competence_title {
+    font-weight: bold;
+}
+

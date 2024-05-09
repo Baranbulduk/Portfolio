@@ -49,6 +49,10 @@ function Form() {
 
   return (
     <form className="form" onSubmit={handleSubmit}>
+      <p>
+          If you have any further questions,
+          <br /> don't hesitate to send me a message!
+        </p>
       <label>Fullname:</label>
       <input type="text" value={fullName} onChange={handleFullName} 
       ref={nameInputRef}
@@ -58,8 +62,8 @@ function Form() {
       <input type="email" value={email} onChange={handleEmail} />
 
       <label>Question:</label>
-      <textarea value={message} onChange={handleMessage}></textarea>
-      <button type="submit">Send</button>
+      <textarea className="question_input" value={message} onChange={handleMessage}></textarea>
+      <button className="sendButton" type="submit">SEND</button>
     </form>
   );
 }

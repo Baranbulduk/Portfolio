@@ -1,7 +1,7 @@
 .work_education_experience {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 20px auto;
+    margin: 100px auto;
 }
 
 .section_container {
@@ -12,9 +12,9 @@
 }
 
 .section_title {
-    background-color: #000000;
-    color: white;
-    border: 1px solid #000000;
+    background-color: #ebebeb;
+    color: black;
+    border: 1px solid #ebebeb;
     height: 50px;
     width: 440px;
     border-radius: 5px 5px 0 0;

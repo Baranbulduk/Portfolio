@@ -1,12 +1,11 @@
 import "./Competence.css";
 
-function Competence({ image, title, experience }) {
+function Competence({ image, title }) {
   return (
-      <article className="competence">
+      <div className="competence">
         <img className="competence_logo" src={image} alt="logo" />
-        <h3>{title}</h3>
-        <p>{experience} year/s experience</p>
-      </article>
+        <span className="competence_title">{title}</span>
+      </div>
   );
 }
 

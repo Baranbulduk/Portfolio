@@ -1,16 +1,74 @@
 .theme-light {
   background-color: #fff;
-  color: #333;
-  height: 100%;
-
-  header {
-    background-color: #fff;
-  }
 }
 
 .theme-dark {
-  background-color: #001e58;
+  background-color: black;
   color: #fff;
   height: 100%;
-  
+
+  header {
+    background-color: black;
+    border-bottom: 1px solid #222222;
+  }
+
+  h1,
+  .navigation_links {
+    color: white;
+  }
+
+  .button_theme {
+    background-color: white;
+    color: black;
+  }
+
+  .hero_image_role {
+    color: rgb(95, 95, 95);
+  }
+
+  .project_article {
+    background-color: #222222;
+  }
+
+  .project_title {
+    color: white;
+  }
+
+  .footer {
+    background-color: #222222;
+  }
+
+  .email_container,
+  .telNr_container,
+  .location_container {
+    background-color: black;
+  }
+
+  .aboutMe_text {
+    background-color: #222222;
+  }
+
+  .section_container {
+    border: 1px solid #222222;
+  }
+
+  .section_title {
+    background-color: #222222;
+    color: white;
+    border: 1px solid #222222;
+  }
+
+  .form {
+    background-color: #222222;
+  }
+
+  input,
+  .question_input {
+    background-color: black;
+  }
+
+  .sendButton {
+    background-color: white;
+    color: black;
+  }
 }

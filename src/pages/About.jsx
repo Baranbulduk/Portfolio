@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header/Header";
 import Competence from "../components/Competence/Competence";
-import Experience from '../components/Experience/Experience';
+import Experience from "../components/Experience/Experience";
 import Footer from "../components/Footer/Footer";
 import htmlLogo from "../assests/htmlLogo.png";
 import cssLogo from "../assests/cssLogo.png";
@@ -20,7 +20,8 @@ function About() {
       <Header />
       <div className="wrapper">
         <h2>ABOUT ME</h2>
-        <section>
+        </div>
+        <section className="aboutMe_text">
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
             mollitia aut delectus ipsam suscipit? Voluptatibus optio sapiente
@@ -31,26 +32,21 @@ function About() {
             alias error eaque velit unde laudantium porro.
           </p>
         </section>
-
+        <div className="wrapper">
         <h3>COMPETENCE</h3>
         <section className="competence_container">
-          <Competence image={htmlLogo} title="HTML" experience="2" />
-          <Competence image={cssLogo} title="CSS" experience="2" />
-          <Competence
-            image={javascriptLogo}
-            title="JavaScript"
-            experience="1"
-          />
-          <Competence image={reactLogo} title="React" experience="1" />
-          <Competence image={nodejsLogo} title="Node.js" experience="1" />
-          <Competence image={gitLogo} title="Git" experience="1" />
-          <Competence image={figmaLogo} title="Figma" experience="1" />
-          <Competence image={scrumLogo} title="Scrum" experience="1" />
-          <Competence image={wordpressLogo} title="Wordpress" experience="1" />
-          <Competence image={adobeLogo} title="Adobe" experience="2" />
+          <Competence image={htmlLogo} title="HTML" />
+          <Competence image={cssLogo} title="CSS" />
+          <Competence image={javascriptLogo} title="JavaScript" />
+          <Competence image={reactLogo} title="React" />
+          <Competence image={nodejsLogo} title="Node.js" />
+          <Competence image={gitLogo} title="Git" />
+          <Competence image={figmaLogo} title="Figma" />
+          <Competence image={scrumLogo} title="Scrum" />
+          <Competence image={wordpressLogo} title="Wordpress" />
+          <Competence image={adobeLogo} title="Adobe" />
         </section>
         <Experience />
-       
       </div>
       <Footer />
     </>

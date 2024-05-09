@@ -42,5 +42,17 @@ h2, h3, p {
 }
 
 h2 {
-    margin: 10px 0;
+    margin: 70px 0;
+    font-size: 28px;
+}
+
+.aboutMe_text {
+    background-color: #ebebeb;
+    padding: 40px 0;
+    margin-bottom: 100px;
+}
+
+.aboutMe_text p {
+    width: 800px;
+    line-height: 22px;
 }

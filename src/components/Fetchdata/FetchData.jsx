@@ -26,23 +26,11 @@ function FetchData() {
               src={repo.owner.avatar_url}
               alt="project_image"
             />
-            <h3>{repo.name}</h3>
+            <h3 className="project_title">{repo.name}</h3>
           </a>
         </article>
       ))}
     </section>
-
-    /*TEST
-    <section>
-      {data.map((repo) => (
-        <article key={repo.id}>
-          <a href={repo.html_url}>
-            <img src={require(`../../assests/${repo.name}.png`)} alt={`Bild för ${repo.name}`} />
-            <h3>{repo.name}</h3>
-          </a>
-        </article>
-      ))}
-    </section>*/
   );
 }
 
