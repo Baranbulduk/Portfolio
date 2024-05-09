@@ -9,7 +9,7 @@
 
   header {
     background-color: black;
-    border-bottom: 1px solid #222222;
+    border-bottom: 1px solid #0e0e0e;
   }
 
   h1,
@@ -27,7 +27,7 @@
   }
 
   .project_article {
-    background-color: #222222;
+    background-color: #0e0e0e;
   }
 
   .project_title {
@@ -35,7 +35,7 @@
   }
 
   .footer {
-    background-color: #222222;
+    background-color: #0e0e0e;
   }
 
   .email_container,
@@ -45,21 +45,21 @@
   }
 
   .aboutMe_text {
-    background-color: #222222;
+    background-color: #0e0e0e;
   }
 
   .section_container {
-    border: 1px solid #222222;
+    border: 1px solid #0e0e0e;
   }
 
   .section_title {
-    background-color: #222222;
+    background-color: #0e0e0e;
     color: white;
-    border: 1px solid #222222;
+    border: 1px solid #0e0e0e;
   }
 
   .form {
-    background-color: #222222;
+    background-color: #0e0e0e;
   }
 
   input,
