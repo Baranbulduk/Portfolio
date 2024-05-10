@@ -1,49 +1,47 @@
 header {
-    background-color: white;
-    position: sticky;
-    top: 0;
-    z-index: 99;
-    border-bottom: 1px solid #ebebeb;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  border-bottom: 1px solid #ebebeb;
 }
 
 .header {
-    display: flex;
-    height: 60px;
-    justify-content: space-between;
-    
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
 }
 
 .logo {
-    margin: auto 0;
-    font-size: 8px;
-    text-decoration: none;
-    color: black;
+  margin: auto 0;
+  font-size: 8px;
+  text-decoration: none;
+  color: black;
 }
 
 .navigation {
-    display: flex;
-    align-items: center;
-    margin: 0;
-
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
 
 .navigation_links {
-    text-decoration: none;
-    color: black;
-    margin: 0 20px;
-    font-size: 14px;
+  text-decoration: none;
+  color: black;
+  margin: 0 20px;
+  font-size: 14px;
 }
 
 .navigation_links:hover {
-    color: #656565;
+  color: #656565;
 }
 
 .button_theme {
-    padding: 5px;
-    margin-left: 20px;
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    padding: 10px;
+  padding: 5px;
+  margin-left: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
 }

@@ -9,7 +9,6 @@ function Contact() {
       <Header />
       <div className="wrapper">
         <h2>CONTACT</h2>
-       
         <Form />
       </div>
       <Footer />

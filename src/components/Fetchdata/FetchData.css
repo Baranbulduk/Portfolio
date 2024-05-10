@@ -1,24 +1,24 @@
 .projects_container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    width: 1080px;
-    gap: 20px;
-    margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 1080px;
+  gap: 20px;
+  margin-bottom: 100px;
 }
 
 .project_article {
-    background-color: #ebebeb;
-    height: 270px;
-    border-radius: 5px;
+  background-color: #ebebeb;
+  height: 270px;
+  border-radius: 5px;
 }
 
 .project_image {
-    width: 200px;
-    border-radius: 5px 5px 0 0;
+  width: 200px;
+  border-radius: 5px 5px 0 0;
 }
 
 .project_title {
-    color: black;
-    text-align: left;
-    padding: 15px 0 0 15px;
+  color: black;
+  text-align: left;
+  padding: 15px 0 0 15px;
 }

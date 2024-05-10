@@ -1,22 +1,21 @@
 .competence_container {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    width: 1080px;
-    margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 1080px;
+  margin: 20px auto;
 }
 
 .competence {
-    display: flex;
-    align-items: center;
-    height: 70px;
+  display: flex;
+  align-items: center;
+  height: 70px;
 }
 
 .competence_logo {
-    width: 30px;
-    margin: 0 5px 0 0;
+  width: 30px;
+  margin: 0 5px 0 0;
 }
 
 .competence_title {
-    font-weight: bold;
+  font-weight: bold;
 }
-

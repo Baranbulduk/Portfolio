@@ -1,6 +1,7 @@
 .theme-light {
   background-color: #fff;
 
+  /* FOOTER */
   .email_image_light,
   .telNr_image_light,
   .location_image_light,
@@ -20,6 +21,7 @@
     border-bottom: 1px solid #1a1a1a;
   }
 
+  /* HOME */
   h1,
   .navigation_links {
     color: white;
@@ -42,6 +44,7 @@
     color: white;
   }
 
+  /* FOOTER */
   .footer {
     background-color: #1a1a1a;
   }
@@ -60,6 +63,7 @@
     display: none;
   }
 
+  /* ABOUT */
   .aboutMe_text {
     background-color: #1a1a1a;
   }
@@ -74,6 +78,7 @@
     border: 1px solid #1a1a1a;
   }
 
+  /* CONTACT */
   .form {
     background-color: #1a1a1a;
   }

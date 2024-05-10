@@ -44,15 +44,18 @@
   width: 23px;
 }
 
-.email_image, .email_image_light {
+.email_image,
+.email_image_light {
   margin-right: -10px;
 }
 
-.telNr_image, .telNr_image_light {
+.telNr_image,
+.telNr_image_light {
   margin-right: -20px;
 }
 
-.location_image, .location_image_light {
+.location_image,
+.location_image_light {
   margin-right: -30px;
 }
 

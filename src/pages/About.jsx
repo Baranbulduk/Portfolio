@@ -20,19 +20,19 @@ function About() {
       <Header />
       <div className="wrapper">
         <h2>ABOUT ME</h2>
-        </div>
-        <section className="aboutMe_text">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-            mollitia aut delectus ipsam suscipit? Voluptatibus optio sapiente
-            numquam incidunt magnam aut dicta, tempora vel odio quasi facere
-            quas minus veritatis. Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Deserunt nostrum amet distinctio ea pariatur, nisi
-            aspernatur soluta beatae corporis! Corrupti et iure reprehenderit
-            alias error eaque velit unde laudantium porro.
-          </p>
-        </section>
-        <div className="wrapper">
+      </div>
+      <section className="aboutMe_text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+          mollitia aut delectus ipsam suscipit? Voluptatibus optio sapiente
+          numquam incidunt magnam aut dicta, tempora vel odio quasi facere quas
+          minus veritatis. Lorem ipsum, dolor sit amet consectetur adipisicing
+          elit. Deserunt nostrum amet distinctio ea pariatur, nisi aspernatur
+          soluta beatae corporis! Corrupti et iure reprehenderit alias error
+          eaque velit unde laudantium porro.
+        </p>
+      </section>
+      <div className="wrapper">
         <h3>COMPETENCE</h3>
         <section className="competence_container">
           <Competence image={htmlLogo} title="HTML" />
