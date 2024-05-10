@@ -3,16 +3,16 @@ import Header from "../components/Header/Header";
 import Competence from "../components/Competence/Competence";
 import Experience from "../components/Experience/Experience";
 import Footer from "../components/Footer/Footer";
-import htmlLogo from "../assests/logotypes/htmlLogo.png";
-import cssLogo from "../assests/logotypes/cssLogo.png";
-import javascriptLogo from "../assests/logotypes/javascriptLogo.png";
-import reactLogo from "../assests/logotypes/reactLogo.png";
-import nodejsLogo from "../assests/logotypes/nodejsLogo.png";
-import gitLogo from "../assests/logotypes/gitLogo.png";
-import figmaLogo from "../assests/logotypes/figmaLogo.png";
-import scrumLogo from "../assests/logotypes/scrumLogo.png";
-import wordpressLogo from "../assests/logotypes/wordpressLogo.png";
-import adobeLogo from "../assests/logotypes/adobeLogo.png";
+import htmlLogo from "../assets/logotypes/htmlLogo.png";
+import cssLogo from "../assets/logotypes/cssLogo.png";
+import javascriptLogo from "../assets/logotypes/javascriptLogo.png";
+import reactLogo from "../assets/logotypes/reactLogo.png";
+import nodejsLogo from "../assets/logotypes/nodejsLogo.png";
+import gitLogo from "../assets/logotypes/gitLogo.png";
+import figmaLogo from "../assets/logotypes/figmaLogo.png";
+import scrumLogo from "../assets/logotypes/scrumLogo.png";
+import wordpressLogo from "../assets/logotypes/wordpressLogo.png";
+import adobeLogo from "../assets/logotypes/adobeLogo.png";
 
 function About() {
   return (

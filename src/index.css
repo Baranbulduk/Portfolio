@@ -38,10 +38,13 @@
 
   .project_article {
     background-color: #1a1a1a;
+    box-shadow: none;
   }
 
   .project_title {
     color: white;
+    text-decoration: underline;
+    text-decoration-color: #1a1a1a;
   }
 
   /* FOOTER */
@@ -70,6 +73,8 @@
 
   .section_container {
     border: 1px solid #1a1a1a;
+    box-shadow: 2px 2px 2px #1a1a1a;
+
   }
 
   .section_title {
@@ -81,6 +86,7 @@
   /* CONTACT */
   .form {
     background-color: #1a1a1a;
+    box-shadow: none;
   }
 
   input,

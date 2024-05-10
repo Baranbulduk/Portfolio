@@ -1,15 +1,15 @@
 import "./Footer.css";
-import EmailDark from "../../assests/icons/emailIconDark.png";
-import TelNrDark from "../../assests/icons/phoneIconDark.png";
-import LocationDark from "../../assests/icons/locationIconDark.png";
-import GithubDark from "../../assests/logotypes/githubDark.png";
-import LinkedinDark from "../../assests/logotypes/linkedinDark.png";
+import EmailDark from "../../assets/icons/emailIconDark.png";
+import TelNrDark from "../../assets/icons/phoneIconDark.png";
+import LocationDark from "../../assets/icons/locationIconDark.png";
+import GithubDark from "../../assets/logotypes/githubDark.png";
+import LinkedinDark from "../../assets/logotypes/linkedinDark.png";
 
-import EmailLight from "../../assests/icons/emailIconLight.png";
-import TelNrLight from "../../assests/icons/phoneIconLight.png";
-import LocationLight from "../../assests/icons/locationIconLight.png";
-import GithubLight from "../../assests/logotypes/githubLight.png";
-import LinkedinLight from "../../assests/logotypes/linkedinLight.png";
+import EmailLight from "../../assets/icons/emailIconLight.png";
+import TelNrLight from "../../assets/icons/phoneIconLight.png";
+import LocationLight from "../../assets/icons/locationIconLight.png";
+import GithubLight from "../../assets/logotypes/githubLight.png";
+import LinkedinLight from "../../assets/logotypes/linkedinLight.png";
 import { Link } from "react-router-dom";
 
 function Footer() {

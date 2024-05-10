@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header/Header";
-import heroImage from "../assests/heroImage.jpg";
+import heroImage from "../assets/heroImage.jpg";
 import FetchData from "../components/Fetchdata/FetchData";
 import Footer from "../components/Footer/Footer";
 
