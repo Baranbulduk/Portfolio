@@ -23,15 +23,16 @@
   }
 
 .hero_image_name {
-    font-size: 36px;
+    font-size: 35.7px;
     letter-spacing: 3px;
     top: 40%;
-    left: 37.0%;
+    left: 37.05%;
 }
 
 .hero_image_role {
     color: rgb(95, 95, 95);
-    letter-spacing: 2px;
+    font-size: 18px;
+    letter-spacing: 6.2px;
     top: 48%;
     left: 37.1%;    
 }

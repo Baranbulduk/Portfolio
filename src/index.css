@@ -1,5 +1,13 @@
 .theme-light {
   background-color: #fff;
+
+  .email_image_light,
+  .telNr_image_light,
+  .location_image_light,
+  .github_image_light,
+  .linkedIn_image_light {
+    display: none;
+  }
 }
 
 .theme-dark {
@@ -9,7 +17,7 @@
 
   header {
     background-color: black;
-    border-bottom: 1px solid #0e0e0e;
+    border-bottom: 1px solid #1a1a1a;
   }
 
   h1,
@@ -27,7 +35,7 @@
   }
 
   .project_article {
-    background-color: #0e0e0e;
+    background-color: #1a1a1a;
   }
 
   .project_title {
@@ -35,7 +43,7 @@
   }
 
   .footer {
-    background-color: #0e0e0e;
+    background-color: #1a1a1a;
   }
 
   .email_container,
@@ -44,22 +52,30 @@
     background-color: black;
   }
 
+  .email_image,
+  .telNr_image,
+  .location_image,
+  .github_image,
+  .linkedIn_image {
+    display: none;
+  }
+
   .aboutMe_text {
-    background-color: #0e0e0e;
+    background-color: #1a1a1a;
   }
 
   .section_container {
-    border: 1px solid #0e0e0e;
+    border: 1px solid #1a1a1a;
   }
 
   .section_title {
-    background-color: #0e0e0e;
+    background-color: #1a1a1a;
     color: white;
-    border: 1px solid #0e0e0e;
+    border: 1px solid #1a1a1a;
   }
 
   .form {
-    background-color: #0e0e0e;
+    background-color: #1a1a1a;
   }
 
   input,
