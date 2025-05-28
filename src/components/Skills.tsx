@@ -1,0 +1,93 @@
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  FaAws,
+} from "react-icons/fa";
+
+import {
+  SiHtml5,
+  SiCss3,
+  SiAdobeillustrator,
+  SiAdobeindesign,
+  SiAdobephotoshop,
+  SiAdobexd,
+  SiFigma,
+  SiExpress,
+  SiMongodb,
+  SiPostman,
+  SiGit,
+  SiReact,
+  SiTailwindcss,
+  SiTypescript,
+  SiJavascript,
+  SiVuedotjs,
+  SiWordpress,
+  SiNodedotjs,
+} from "react-icons/si";
+
+const skillsfirstrow = [
+  { name: "Adobe Illustrator", icon: <SiAdobeillustrator /> },
+  { name: "Adobe InDesign", icon: <SiAdobeindesign /> },
+  { name: "Adobe Photoshop", icon: <SiAdobephotoshop /> },
+  { name: "Adobe XD", icon: <SiAdobexd /> },
+  { name: "AWS", icon: <FaAws /> },
+  { name: "CSS3", icon: <SiCss3 /> },
+  { name: "Express.js", icon: <SiExpress /> },
+  { name: "Figma", icon: <SiFigma /> },
+  { name: "Git", icon: <SiGit /> },
+  { name: "HTML5", icon: <SiHtml5 /> },
+];
+
+const skillssecondrow = [   
+  { name: "JavaScript", icon: <SiJavascript /> },
+  { name: "MongoDB", icon: <SiMongodb /> },
+  { name: "Node.js", icon: <SiNodedotjs /> },
+  { name: "Postman", icon: <SiPostman /> },
+  { name: "React.js", icon: <SiReact /> },
+  { name: "TailwindCSS", icon: <SiTailwindcss /> },
+  { name: "TypeScript", icon: <SiTypescript /> },
+  { name: "Vue.js", icon: <SiVuedotjs /> },
+  { name: "WordPress", icon: <SiWordpress /> },
+];
+
+const Skills = () => {
+  return (
+    <section className="section skills">
+      <h2 className="skills-title">Tech Stack</h2>
+        <div className="skills-row">
+          {skillsfirstrow.map((skill) => (
+            <motion.div
+              className="skill-card"
+              animate={{ x: [-20, 20, -20] }}
+              transition={{
+                duration: 4,
+                ease: "easeInOut",
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+          >
+            <span className="skill-icon">{skill.icon}</span>
+            <span className="skill-name">{skill.name}</span>
+          </motion.div>
+        ))}</div>
+        <div className="skills-row">
+          {skillssecondrow.map((skill) => (
+            <motion.div
+              className="skill-card"
+              animate={{ x: [20, -20, 20] }}
+              transition={{
+                duration: 4,
+                ease: "easeInOut",
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+            >
+              <span className="skill-icon">{skill.icon}</span>
+              <span className="skill-name">{skill.name}</span>
+            </motion.div>
+          ))}</div>
+    </section>
+  );
+};
+
+export default Skills;
