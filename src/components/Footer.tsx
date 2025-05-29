@@ -1,11 +1,19 @@
 import React from 'react'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const Footer = () => {
   return (
     <footer>
       <div className="container">
         <div className="footer-socials">
+          <a href='https://baranbulduk99@gmail.com'
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-link"
+            aria-label="Email"
+          >
+            <span className="gradient-icon"><FaEnvelope /></span>
+          </a>
           <a
             href="https://github.com/baranbulduk"
             target="_blank"

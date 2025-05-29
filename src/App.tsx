@@ -7,6 +7,7 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Experience from './components/Experience'
 import About from './components/About'
+import Form from './components/Form'
 import Footer from './components/Footer'
 
 function App() {
@@ -51,6 +52,9 @@ function App() {
         </section>
         <section id="about">
           <About />
+        </section>
+        <section id="form">
+          <Form />
         </section>
       </div>
       <Footer />

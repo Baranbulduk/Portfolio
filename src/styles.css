@@ -130,30 +130,37 @@ nav {
   color: #131215;
   margin-top: 2rem;
   padding: 0.75rem 2rem;
-  border-radius: 8px;
+  border-radius: 30px;
   font-size: 1.1rem;
   text-decoration: none;
   transition: background 0.2s;
   font-weight: 500;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 20px rgba(252, 203, 69, 0.18);
 }
 .hero-btn:hover {
   background: #242328;
+  box-shadow: none;
   color: #fff;
 }
 
 .skills {
   text-align: center;
   background: #131215;
+  width: 110%;
+  margin-left: -5%;
 }
 .skills-title {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: bold;
   margin-bottom: 2rem;
   background: linear-gradient(
     90deg,
-    rgb(255, 118, 64) 0%,
-    rgba(252, 237, 69, 1) 100%
+    rgb(255, 118, 64) 40%,
+    rgba(252, 237, 69, 1) 70%
   );
+  text-shadow: 0 0 20px rgba(252, 203, 69, 0.18);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -194,14 +201,15 @@ nav {
   text-align: center;
 }
 .projects-title {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: bold;
   margin-bottom: 2rem;
   background: linear-gradient(
     90deg,
-    rgb(255, 118, 64) 0%,
-    rgba(252, 237, 69, 1) 100%
+    rgb(255, 118, 64) 40%,
+    rgba(252, 237, 69, 1) 70%
   );
+  text-shadow: 0 0 20px rgba(252, 203, 69, 0.18);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -223,6 +231,14 @@ nav {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
   background: #242328;
 }
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 .project-title {
   font-size: 1.2rem;
   font-weight: bold;
@@ -230,7 +246,7 @@ nav {
   background: linear-gradient(
     90deg,
     rgb(255, 118, 64) 0%,
-    rgba(252, 237, 69, 1) 50%
+    rgba(252, 237, 69, 1) 100%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -249,7 +265,7 @@ nav {
 .project-tech-badge {
   background: #242328;
   color: #fff;
-  border-radius: 999px;
+  border-radius: 10px;
   padding: 0.25rem 0.75rem;
   font-size: 0.9rem;
 }
@@ -268,18 +284,38 @@ nav {
   background: #131215;
 }
 .experience-title {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: bold;
   margin-bottom: 2rem;
   background: linear-gradient(
     90deg,
-    rgb(255, 118, 64) 0%,
-    rgba(252, 237, 69, 1) 100%
+    rgb(255, 118, 64)40%,
+    rgba(252, 237, 69, 1) 70%
   );
+  text-shadow: 0 0 20px rgba(252, 203, 69, 0.18);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.experience-subtitle-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+}
+.experience-subtitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .experience-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -290,6 +326,7 @@ nav {
   padding-left: 2rem;
   position: relative;
 }
+
 .timeline-dot {
   width: 16px;
   height: 16px;
@@ -299,9 +336,13 @@ nav {
   left: -9px;
   top: 0;
 }
+
 .timeline-entry {
   margin-bottom: 2rem;
   text-align: left;
+  background-color: #1b1a1f;
+  border-radius: 10px;
+  padding: 1rem;
 }
 .timeline-title {
   font-size: 1.1rem;
@@ -319,7 +360,7 @@ nav {
   color: #fff;
 }
 .timeline-period {
-  color: #577bc1;
+  color: #7e7b8c;
   font-size: 0.95rem;
   margin-bottom: 0.5rem;
 }
@@ -333,14 +374,15 @@ nav {
   margin: 0 auto;
 }
 .about-title {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: bold;
   margin-bottom: 2rem;
   background: linear-gradient(
     90deg,
-    rgb(255, 118, 64) 0%,
-    rgba(252, 237, 69, 1) 100%
+    rgb(255, 118, 64) 40%,
+    rgba(252, 237, 69, 1) 70%
   );
+  text-shadow: 0 0 20px rgba(252, 203, 69, 0.18);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -354,28 +396,21 @@ nav {
 
 footer {
   background: #1b1a1f;
-  padding: 2rem 0 1rem 0;
+  padding: 2rem 0 0.5rem 0;
   text-align: center;
+  margin-top: 10rem;
 }
 .footer-socials {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 
 .gradient-icon {
-  font-size: 2rem;
-  background: linear-gradient(
-    90deg,
-    rgb(255, 118, 64) 0%,
-    rgba(252, 237, 69, 1) 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  font-size: 1.5rem;
+  color: #fff;
   display: inline-block;
   transition: color 0.2s;
 }
@@ -386,6 +421,181 @@ footer {
   }
 
 .footer-copy {
+  color: #fff;
+  font-size: 0.80rem;
+}
+
+/* --- Timeline Vertical Layout --- */
+.timeline-vertical-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 0 3rem 0;
+  min-height: 400px;
+}
+.timeline-vertical-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #ffeb00;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.timeline-vertical-entry {
+  position: relative;
+  width: 46%;
+  background: #1b1a1f;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 3.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+  z-index: 2;
+}
+.timeline-vertical-entry.left {
+  left: 0;
+  margin-right: 54%;
+  text-align: right;
+}
+.timeline-vertical-entry.right {
+  left: 54%;
+  text-align: left;
+}
+.timeline-vertical-dot {
+  position: absolute;
+  top: 2rem;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: #ffeb00;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  z-index: 3;
+  box-shadow: 0 0 0 4px #1b1a1f;
+}
+.timeline-vertical-entry.right .timeline-vertical-dot {
+  left: 0%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 900px) {
+  .timeline-vertical-entry,
+  .timeline-vertical-entry.left,
+  .timeline-vertical-entry.right {
+    width: 90%;
+    left: 0 !important;
+    margin: 0 auto 3rem auto;
+    text-align: left;
+  }
+  .timeline-vertical-line {
+    left: 20px;
+  }
+  .timeline-vertical-dot {
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* --- Contact Form Styling --- */
+.contact {
+  /* max-height: 700px; */
+  /* max-width removed, width handled by .content-wrapper */
+}
+
+.contact-form-title {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 118, 64) 40%,
+    rgba(252, 237, 69, 1) 70%
+  );
+  text-shadow: 0 0 20px rgba(252, 203, 69, 0.18);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-form-subtitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.contact-form {
+  /* max-width: 420px; */
+  width: 100%;
+  margin: 2rem auto;
+  background: #1b1a1f;
+  border-radius: 12px;
+  padding: 2.5rem 20rem 2.5rem 20rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.contact-label {
+  background: linear-gradient(
+    90deg,
+    rgb(255, 118, 64) 0%,
+    rgba(252, 237, 69, 1) 30%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+.contact-input,
+.contact-textarea {
+  background: #242328;
+  border: 2px solid #242328;
+  border-radius: 6px;
+  color: #fff;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  transition: border 0.2s;
+  outline: none;
+  margin-bottom: 1rem;
+}
+.contact-input:focus,
+.contact-textarea:focus {
+  border: 2px solid #ffeb00;
+}
+.contact-submit {
+  background: linear-gradient(90deg, rgb(255, 118, 64) 0%, #ffeb00 100%);
   color: #131215;
-  font-size: 0.95rem;
+  border: none;
+  border-radius: 30px;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  box-shadow: 0 0 20px rgba(252, 203, 69, 0.18);
+  transition: background 0.2s, color 0.2s;
+}
+.contact-submit:hover {
+  background: #242328;
+  color: #fff;
+  box-shadow: none;
+}
+.contact-success {
+  color: #ffeb00;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.contact-error {
+  color: #ff6464;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  text-align: center;
 }

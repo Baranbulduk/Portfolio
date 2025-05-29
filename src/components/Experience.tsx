@@ -3,85 +3,86 @@ import { motion } from 'framer-motion'
 
 const workExperience = [
   {
-    title: 'Frontend Developer',
-    company: 'Company Name',
-    period: '2023 - Present',
-    description: 'Working on modern web applications using React and TypeScript.'
+    title: 'Fullstack Developer',
+    company: 'Rexett AB',
+    period: 'Jan 2025 - Now',
+    description: "I'm a intern at Rexett AB and work with fullstack development."
   },
   {
-    title: 'Junior Developer',
-    company: 'Previous Company',
-    period: '2022 - 2023',
-    description: 'Developed and maintained web applications using JavaScript and React.'
+    title: 'Fordonsmontör',
+    company: 'Volvo Cars AB',
+    period: 'Mar 2022 - Mar 2025',
+    description: 'Worked as a vehicle technician and performed maintenance and repairs on vehicles.'
   }
 ]
 
 const education = [
   {
-    title: 'Frontend Development',
-    institution: 'School Name',
-    period: '2021 - 2022',
-    description: 'Focused on modern web development technologies and best practices.'
+    title: 'Frontend Developer',
+    institution: 'Folkuniversitetet',
+    period: 'Sep 2023 - Jun 2025',
+    description: 'Studied Frontend Development and fullstack development.'
   },
   {
-    title: 'Computer Science',
-    institution: 'University Name',
-    period: '2017 - 2021',
-    description: "Bachelor's degree in Computer Science with focus on software development."
+    title: 'Programmering 1',
+    institution: 'NBI/Handelsakedemin',
+    period: 'May 2023 - May 2023',
+    description: 'Basic Phyton programming course.'
+  },
+  {
+    title: 'Digitala Medier',
+    institution: 'Högskolan Väst',
+    period: 'Sep 2020 - May 2023',
+    description: 'Studied Digital Media and worked with web development, design, and multimedia.'
+  },
+  {
+    title: 'Samhällsvetenskap med inriktning Beteendevetenskap',
+    institution: 'Kunskapsgymnasiet Göteborg',
+    period: 'Aug 2015 - Jun 2018',
+    description: 'Studied Social Science with a focus on Behavioral Science.'
   }
 ]
+
+const timelineItems = [
+  { type: 'work', ...workExperience[0] },
+  { type: 'education', ...education[0] },
+  { type: 'work', ...workExperience[1] },
+  { type: 'education', ...education[1] },
+  { type: 'education', ...education[2] },
+  { type: 'education', ...education[3] },
+]
+
 
 const Experience = () => {
   return (
     <section className="section experience">
       <h2 className="experience-title">Experience</h2>
-      <div className="experience-grid">
-        {/* Work Experience */}
-        <div>
-          <h3 className="experience-title" style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Work Experience</h3>
-          <div className="timeline">
-            {workExperience.map((exp, index) => (
-              <motion.div
-                key={exp.title}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="timeline-entry"
-                style={{ position: 'relative' }}
-              >
-                <div className="timeline-dot" />
-                <div className="timeline-title">{exp.title}</div>
-                <div className="timeline-company">{exp.company}</div>
-                <div className="timeline-period">{exp.period}</div>
-                <div className="timeline-desc">{exp.description}</div>
-              </motion.div>
-            ))}
-          </div>
+      <div className='experience-subtitle-wrapper'>
+        <div className='experience-subtitle'>
+          Work
         </div>
-        {/* Education */}
-        <div>
-          <h3 className="experience-title" style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Education</h3>
-          <div className="timeline">
-            {education.map((edu, index) => (
-              <motion.div
-                key={edu.title}
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="timeline-entry"
-                style={{ position: 'relative' }}
-              >
-                <div className="timeline-dot" />
-                <div className="timeline-title">{edu.title}</div>
-                <div className="timeline-company">{edu.institution}</div>
-                <div className="timeline-period">{edu.period}</div>
-                <div className="timeline-desc">{edu.description}</div>
-              </motion.div>
-            ))}
-          </div>
+        <div className='experience-subtitle'>
+          Education
         </div>
+        </div>
+        <div className="timeline-vertical-wrapper">
+        <div className="timeline-vertical-line" />
+        {timelineItems.map((item, idx) => (
+          <motion.div
+            key={item.title + idx}
+            initial={{ opacity: 0, x: item.type === 'work' ? -40 : 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: idx * 0.1 }}
+            viewport={{ once: true }}
+            className={`timeline-vertical-entry ${item.type === 'work' ? 'left' : 'right'}`}
+          >
+            <div className="timeline-vertical-dot" />
+            <div className="timeline-title">{item.title}</div>
+            <div className="timeline-company">{item.type === 'work' ? item.company : item.institution}</div>
+            <div className="timeline-period">{item.period}</div>
+            <div className="timeline-desc">{item.description}</div>
+          </motion.div>
+        ))}
       </div>
     </section>
   )

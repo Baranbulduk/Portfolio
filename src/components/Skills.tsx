@@ -31,16 +31,19 @@ const skillsfirstrow = [
   { name: "Adobe Photoshop", icon: <SiAdobephotoshop /> },
   { name: "Adobe XD", icon: <SiAdobexd /> },
   { name: "AWS", icon: <FaAws /> },
+];
+
+const skillssecondrow = [  
   { name: "CSS3", icon: <SiCss3 /> },
   { name: "Express.js", icon: <SiExpress /> },
   { name: "Figma", icon: <SiFigma /> },
   { name: "Git", icon: <SiGit /> },
-  { name: "HTML5", icon: <SiHtml5 /> },
-];
-
-const skillssecondrow = [   
+  { name: "HTML5", icon: <SiHtml5 /> }, 
   { name: "JavaScript", icon: <SiJavascript /> },
   { name: "MongoDB", icon: <SiMongodb /> },
+];
+
+const skillsthirdrow = [
   { name: "Node.js", icon: <SiNodedotjs /> },
   { name: "Postman", icon: <SiPostman /> },
   { name: "React.js", icon: <SiReact /> },
@@ -60,7 +63,7 @@ const Skills = () => {
               className="skill-card"
               animate={{ x: [-20, 20, -20] }}
               transition={{
-                duration: 4,
+                duration: 10,
                 ease: "easeInOut",
                 repeat: Infinity,
                 repeatType: "reverse",
@@ -76,7 +79,23 @@ const Skills = () => {
               className="skill-card"
               animate={{ x: [20, -20, 20] }}
               transition={{
-                duration: 4,
+                duration: 10,
+                ease: "easeInOut",
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+            >
+              <span className="skill-icon">{skill.icon}</span>
+              <span className="skill-name">{skill.name}</span>
+            </motion.div>
+          ))}</div>
+          <div className="skills-row">
+          {skillsthirdrow.map((skill) => (
+            <motion.div
+              className="skill-card"
+              animate={{ x: [-20, 20, -20] }}
+              transition={{
+                duration: 10,
                 ease: "easeInOut",
                 repeat: Infinity,
                 repeatType: "reverse",
