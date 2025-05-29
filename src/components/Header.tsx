@@ -12,6 +12,7 @@ const Header = ({ activeSection }: HeaderProps) => {
     { name: 'Projects', to: 'projects' },
     { name: 'Experience', to: 'experience' },
     { name: 'About', to: 'about' },
+    { name: 'Contact', to: 'contact' },
   ]
 
   return (
