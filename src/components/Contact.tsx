@@ -5,9 +5,9 @@ import emailjs from '@emailjs/browser'
 
 // create a form component with a name, email, message, and submit button
 
-const SERVICE_ID = 'your_service_id'
-const TEMPLATE_ID = 'your_template_id'
-const PUBLIC_KEY = 'your_public_key'
+const SERVICE_ID = 'service_wh3f17e'
+const TEMPLATE_ID = 'template_hkrh01k'
+const PUBLIC_KEY = 'LC_wdOGH4927VAB4C'
 
 const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' })
@@ -44,7 +44,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="content-wrapper contact">
+    <div className="section  contact">
       <h2 className="contact-form-title">Contact</h2>
       <form className="contact-form" onSubmit={handleSubmit} autoComplete="off">
         <span className="contact-form-subtitle">Get in touch!</span>

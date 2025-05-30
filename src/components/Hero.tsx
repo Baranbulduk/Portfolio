@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const Hero = () => {
   return (
-    <section className="section hero">
+    <section className="hero">
       <div>
       <motion.p
           initial={{ opacity: 0, y: 20 }}

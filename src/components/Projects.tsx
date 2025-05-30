@@ -9,8 +9,6 @@ const projects = [
   {
     id: 1,
     title: "Fullstack Task Manager",
-    description:
-      "En uppgiftshanterare med autentisering och rollbaserad åtkomst (Admin, Manager, Employer).",
     image: House,
     tech: "React, Node.js, Express, MongoDB, JWT",
     year: 2025,
@@ -19,8 +17,6 @@ const projects = [
   {
     id: 2,
     title: "Quiz App",
-    description:
-      "En frågesport-app där användare kan spela olika kategorier och spara sina poäng.",
     image: Apartment,
     tech: "React, TypeScript, Tailwind CSS",
     year: 2024,
@@ -29,8 +25,6 @@ const projects = [
   {
     id: 3,
     title: "Fullstack Task Manager",
-    description:
-      "En uppgiftshanterare med autentisering och rollbaserad åtkomst (Admin, Manager, Employer).",
     image: Tokyo,
     tech: "React, Node.js, Express, MongoDB, JWT",
     year: 2025,
@@ -39,8 +33,6 @@ const projects = [
   {
     id: 4,
     title: "Fullstack Task Manager",
-    description:
-      "En uppgiftshanterare med autentisering och rollbaserad åtkomst (Admin, Manager, Employer).",
     image: Plants,
     tech: "React, Node.js, Express, MongoDB, JWT",
     year: 2025,
@@ -69,7 +61,6 @@ const Projects = () => {
             />
             <div className="project-info">
               <h3 className="project-title">{project.title}</h3>
-              <p className="project-desc">{project.description}</p>
               <p className="project-year">{project.year}</p>
               <div className="project-tech">
                 {project.tech.split(", ").map((tech, i) => (

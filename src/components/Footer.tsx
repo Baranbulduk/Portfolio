@@ -6,7 +6,7 @@ const Footer = () => {
     <footer>
       <div className="container">
         <div className="footer-socials">
-          <a href='https://baranbulduk99@gmail.com'
+          <a href='mailto:baranbulduk99@gmail.com'
             target="_blank"
             rel="noopener noreferrer"
             className="footer-link"
@@ -25,7 +25,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://linkedin.com/in/your-profile"
+            href="https://www.linkedin.com/in/baran-bulduk-000a74198"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-link"
