@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaAws } from "react-icons/fa";
 import {
@@ -51,6 +51,31 @@ const skillsthirdrow = [
 ];
 
 const Skills = () => {
+  const [shouldAnimate, setShouldAnimate] = useState(true);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setShouldAnimate(window.innerWidth > 768);
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
+  const animationProps = (reverse = false) =>
+    shouldAnimate
+      ? {
+          animate: { x: reverse ? [20, -20, 20] : [-20, 20, -20] },
+          transition: {
+            duration: 10,
+            ease: "easeInOut",
+            repeat: Infinity,
+            repeatType: "reverse",
+          },
+        }
+      : {};
+
   return (
     <section className="skills">
       <h2 className="skills-title">Tech Stack</h2>
@@ -60,13 +85,7 @@ const Skills = () => {
           <motion.div
             key={skill.name}
             className="skill-card"
-            animate={{ x: [-20, 20, -20] }}
-            transition={{
-              duration: 10,
-              ease: "easeInOut",
-              repeat: Infinity,
-              repeatType: "reverse",
-            }}
+            {...animationProps()}
           >
             <span className="skill-icon">{skill.icon}</span>
             <span className="skill-name">{skill.name}</span>
@@ -79,13 +98,7 @@ const Skills = () => {
           <motion.div
             key={skill.name}
             className="skill-card"
-            animate={{ x: [20, -20, 20] }}
-            transition={{
-              duration: 10,
-              ease: "easeInOut",
-              repeat: Infinity,
-              repeatType: "reverse",
-            }}
+            {...animationProps(true)}
           >
             <span className="skill-icon">{skill.icon}</span>
             <span className="skill-name">{skill.name}</span>
@@ -98,13 +111,7 @@ const Skills = () => {
           <motion.div
             key={skill.name}
             className="skill-card"
-            animate={{ x: [-20, 20, -20] }}
-            transition={{
-              duration: 10,
-              ease: "easeInOut",
-              repeat: Infinity,
-              repeatType: "reverse",
-            }}
+            {...animationProps()}
           >
             <span className="skill-icon">{skill.icon}</span>
             <span className="skill-name">{skill.name}</span>
@@ -116,4 +123,3 @@ const Skills = () => {
 };
 
 export default Skills;
-
