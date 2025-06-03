@@ -22,12 +22,15 @@ import {
   SiNodedotjs,
 } from "react-icons/si";
 
+import { DiScrum } from "react-icons/di";
+
 const skillsfirstrow = [
   { name: "Adobe Illustrator", icon: <SiAdobeillustrator /> },
   { name: "Adobe InDesign", icon: <SiAdobeindesign /> },
   { name: "Adobe Photoshop", icon: <SiAdobephotoshop /> },
   { name: "Adobe XD", icon: <SiAdobexd /> },
   { name: "AWS", icon: <FaAws /> },
+  { name: "Scrum", icon: <DiScrum /> },
 ];
 
 const skillssecondrow = [
@@ -51,31 +54,13 @@ const skillsthirdrow = [
 ];
 
 const Skills = () => {
+
   return (
     <section className="skills">
-      <h2 className="skills-title">Tech Stack</h2>
+      <h2 className="skills-title">Skills</h2>
 
       <div className="skills-row">
         {skillsfirstrow.map((skill) => (
-          <motion.div
-            key={skill.name}
-            className="skill-card"
-            animate={{ x: [-20, 20, -20] }}
-            transition={{
-              duration: 10,
-              ease: "easeInOut",
-              repeat: Infinity,
-              repeatType: "reverse",
-            }}
-          >
-            <span className="skill-icon">{skill.icon}</span>
-            <span className="skill-name">{skill.name}</span>
-          </motion.div>
-        ))}
-      </div>
-
-      <div className="skills-row">
-        {skillssecondrow.map((skill) => (
           <motion.div
             key={skill.name}
             className="skill-card"
@@ -94,11 +79,30 @@ const Skills = () => {
       </div>
 
       <div className="skills-row">
-        {skillsthirdrow.map((skill) => (
+        {skillssecondrow.map((skill) => (
           <motion.div
             key={skill.name}
             className="skill-card"
             animate={{ x: [-20, 20, -20] }}
+            transition={{
+              duration: 10,
+              ease: "easeInOut",
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
+          >
+            <span className="skill-icon">{skill.icon}</span>
+            <span className="skill-name">{skill.name}</span>
+          </motion.div>
+        ))}
+      </div>
+
+      <div className="skills-row">
+        {skillsthirdrow.map((skill) => (
+          <motion.div
+            key={skill.name}
+            className="skill-card"
+            animate={{ x: [20, -20, 20] }}
             transition={{
               duration: 10,
               ease: "easeInOut",
@@ -116,4 +120,3 @@ const Skills = () => {
 };
 
 export default Skills;
-
