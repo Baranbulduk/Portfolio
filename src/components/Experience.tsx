@@ -72,7 +72,7 @@ const Experience = () => {
     {/* Doten placeras direkt i wrappern */}
     <motion.div
       className="timeline-vertical-dot"
-      style={{ top: `${idx * 180}px` }}
+      style={{ top: `${idx * 200}px` }}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5, delay: idx * 0.1 }}
@@ -86,7 +86,7 @@ const Experience = () => {
       transition={{ duration: 0.5, delay: idx * 0.1 }}
       viewport={{ once: true }}
       className={`timeline-vertical-entry ${item.type === 'work' ? 'left' : 'right'}`}
-      style={{ top: `${idx * 180}px`, position: 'absolute' }}
+      style={{ top: `${idx * 200}px`, position: 'absolute' }}
     >
       <div className="timeline-title">{item.title}</div>
       <div className="timeline-company">{item.type === 'work' ? item.company : item.institution}</div>
