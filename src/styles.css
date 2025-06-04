@@ -464,9 +464,7 @@ header {
 }
 
 .timeline-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-bottom: 0.2rem;
 }
 
 .timeline-title {
@@ -757,7 +755,9 @@ footer {
   }
 
   .timeline-header {
-    margin-bottom: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .timeline-type {
