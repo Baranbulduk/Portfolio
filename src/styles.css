@@ -401,9 +401,9 @@ header {
 .timeline-vertical-wrapper {
   position: relative;
   width: 100%;
-  margin: 0 auto;
-  min-height: 1150px;
+  margin: 20px auto;
 }
+
 .timeline-vertical-line {
   position: absolute;
   left: 50%;
@@ -415,29 +415,21 @@ header {
   z-index: 1;
 }
 
-.timeline-vertical-entry {
+.timeline-items-container {
   position: relative;
-  width: 46%;
-  background: #1b1a1f;
-  border-radius: 10px;
-  padding: 1.5rem 2rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.13);
-  z-index: 2;
-  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
-.timeline-vertical-entry.left {
-  left: 0;
-  margin-right: 54%;
-  text-align: right;
-}
-.timeline-vertical-entry.right {
-  left: 54%;
-  text-align: left;
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: left;
 }
 
 .timeline-vertical-dot {
   position: absolute;
-  top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 20px;
@@ -449,6 +441,28 @@ header {
   );
   border-radius: 50%;
   z-index: 3;
+}
+
+.timeline-vertical-entry {
+  position: relative;
+  width: 46%;
+  background: #1b1a1f;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+  z-index: 2;
+}
+
+.timeline-vertical-entry.left {
+  align-self: flex-start;
+  margin-right: 54%;
+  text-align: right;
+}
+
+.timeline-vertical-entry.right {
+  align-self: flex-end;
+  margin-left: 54%;
+  text-align: left;
 }
 
 .timeline-title {
@@ -693,30 +707,31 @@ footer {
     display: none;
   }
 
-  .timeline-vertical-wrapper {
-    min-height: 1300px;
-  }
-
   .timeline-vertical-line {
     left: 1rem;
   }
 
   .timeline-vertical-dot {
     left: 1rem;
+    width: 15px;
+    height: 15px;
+  }
+
+  .timeline-items-container {
+    gap: 2rem;
   }
 
   .timeline-vertical-entry {
     width: 100%;
-    left: 2rem !important;
-    margin-right: 0 !important;
+    margin: 0 !important;
     text-align: left !important;
-    padding: 1rem 1rem;
+    padding: 1rem;
   }
 
   .timeline-vertical-entry.left,
   .timeline-vertical-entry.right {
-    left: 2rem;
-    text-align: left;
+    align-self: flex-start;
+    margin-left: 2rem !important;
   }
 
   .timeline-company {
