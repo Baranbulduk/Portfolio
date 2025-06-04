@@ -1,7 +1,9 @@
 // create a form component
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import emailjs from '@emailjs/browser'
+import { motion, AnimatePresence } from 'framer-motion'
+import { FaCheckCircle } from 'react-icons/fa'
 
 // create a form component with a name, email, message, and submit button
 
@@ -14,6 +16,20 @@ const Contact = () => {
   const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
+  const [showModal, setShowModal] = useState(false)
+
+  useEffect(() => {
+    let timer: number
+    if (submitted) {
+      setShowModal(true)
+      timer = window.setTimeout(() => {
+        setShowModal(false)
+      }, 5000)
+    }
+    return () => {
+      if (timer) clearTimeout(timer)
+    }
+  }, [submitted])
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value })
@@ -44,7 +60,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="section  contact">
+    <div className="section contact">
       <h2 className="contact-form-title">Contact</h2>
       <form className="contact-form" onSubmit={handleSubmit} autoComplete="off">
         <span className="contact-form-subtitle">Get in touch!</span>
@@ -82,9 +98,31 @@ const Contact = () => {
           rows={5}
         />
         <button type="submit" className="contact-submit" disabled={loading}>{loading ? 'Sending...' : 'Send'}</button>
-        {submitted && <div className="contact-success">Thank you for your message!</div>}
         {error && <div className="contact-error">{error}</div>}
       </form>
+
+      <AnimatePresence>
+        {showModal && (
+          <motion.div
+            className="contact-modal"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <motion.div
+              className="contact-modal-content"
+              initial={{ scale: 0.5, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.5, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              <FaCheckCircle className="contact-modal-icon" />
+              <p className="contact-modal-text">Thank you for your message!</p>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   )
 }

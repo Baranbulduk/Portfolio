@@ -34,11 +34,11 @@ const skillsfirstrow = [
 ];
 
 const skillssecondrow = [
-  { name: "CSS3", icon: <SiCss3 /> },
+  { name: "CSS", icon: <SiCss3 /> },
   { name: "Express.js", icon: <SiExpress /> },
   { name: "Figma", icon: <SiFigma /> },
   { name: "Git", icon: <SiGit /> },
-  { name: "HTML5", icon: <SiHtml5 /> },
+  { name: "HTML", icon: <SiHtml5 /> },
   { name: "JavaScript", icon: <SiJavascript /> },
   { name: "MongoDB", icon: <SiMongodb /> },
 ];

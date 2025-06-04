@@ -1,7 +1,26 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-const workExperience = [
+interface WorkExperience {
+  title: string;
+  company: string;
+  period: string;
+  description: string;
+}
+
+interface Education {
+  title: string;
+  institution: string;
+  period: string;
+  description: string;
+}
+
+interface TimelineItem extends Partial<WorkExperience>, Partial<Education> {
+  type: 'work' | 'education';
+  title: string;
+}
+
+const workExperience: WorkExperience[] = [
   {
     title: 'Fullstack Developer',
     company: 'Rexett AB',
@@ -16,7 +35,7 @@ const workExperience = [
   }
 ]
 
-const education = [
+const education: Education[] = [
   {
     title: 'Frontend Developer',
     institution: 'Folkuniversitetet',
@@ -43,7 +62,7 @@ const education = [
   }
 ]
 
-const timelineItems = [
+const timelineItems: TimelineItem[] = [
   { type: 'work', ...workExperience[0] },
   { type: 'education', ...education[0] },
   { type: 'work', ...workExperience[1] },
@@ -51,7 +70,6 @@ const timelineItems = [
   { type: 'education', ...education[2] },
   { type: 'education', ...education[3] },
 ]
-
 
 const Experience = () => {
   return (
@@ -64,37 +82,37 @@ const Experience = () => {
         <div className='experience-subtitle'>
           Education
         </div>
-        </div>
-        <div className="timeline-vertical-wrapper">
+      </div>
+      <div className="timeline-vertical-wrapper">
         <div className="timeline-vertical-line" />
         {timelineItems.map((item, idx) => (
-  <React.Fragment key={item.title + idx}>
-    {/* Doten placeras direkt i wrappern */}
-    <motion.div
-      className="timeline-vertical-dot"
-      style={{ top: `${idx * 200}px` }}
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.5, delay: idx * 0.1 }}
-      viewport={{ once: true }}
-    />
-    
-    {/* Kortet */}
-    <motion.div
-      initial={{ opacity: 0, x: item.type === 'work' ? -40 : 40 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.5, delay: idx * 0.1 }}
-      viewport={{ once: true }}
-      className={`timeline-vertical-entry ${item.type === 'work' ? 'left' : 'right'}`}
-      style={{ top: `${idx * 200}px`, position: 'absolute' }}
-    >
-      <div className="timeline-title">{item.title}</div>
-      <div className="timeline-company">{item.type === 'work' ? item.company : item.institution}</div>
-      <div className="timeline-period">{item.period}</div>
-      <div className="timeline-desc">{item.description}</div>
-    </motion.div>
-  </React.Fragment>
-))}
+          <React.Fragment key={item.title + idx}>
+            <motion.div
+              className="timeline-vertical-dot"
+              style={{ top: `${idx * 180}px` }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              viewport={{ once: true }}
+            />
+            <motion.div
+              initial={{ opacity: 0, x: item.type === 'work' ? -40 : 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              viewport={{ once: true }}
+              className={`timeline-vertical-entry ${item.type === 'work' ? 'left' : 'right'}`}
+              style={{ top: `${idx * 180}px`, position: 'absolute' }}
+            >
+              <div className="timeline-title">{item.title}</div>
+              <div className="timeline-company">
+                {item.type === 'work' ? item.company : item.institution}
+                <span className="timeline-type">{item.type}</span>
+              </div>
+              <div className="timeline-period">{item.period}</div>
+              <div className="timeline-desc">{item.description}</div>
+            </motion.div>
+          </React.Fragment>
+        ))}
       </div>
     </section>
   )
