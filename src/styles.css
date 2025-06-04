@@ -211,16 +211,14 @@ header {
   border-radius: 30px;
   font-size: 1.1rem;
   text-decoration: none;
-  transition: background 0.2s;
   font-weight: 500;
   cursor: pointer;
   border: none;
   box-shadow: 0 0 20px rgba(252, 203, 69, 0.18);
 }
 .hero-btn:hover {
-  background: #242328;
-  box-shadow: none;
-  color: #fff;
+  color: #131215;
+  transform: scale(0.95);
 }
 
 .skills {
@@ -465,6 +463,12 @@ header {
   text-align: left;
 }
 
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .timeline-title {
   font-size: 1.1rem;
   font-weight: bold;
@@ -477,9 +481,11 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .timeline-company {
   color: #fff;
 }
+
 .timeline-period {
   color: #7e7b8c;
   font-size: 0.95rem;
@@ -492,9 +498,26 @@ header {
 
 .timeline-type {
   font-size: 0.8rem;
-  color: #7e7b8c;
+  color: #fff;
   text-transform: capitalize;
   display: none;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.timeline-type.work {
+  background: linear-gradient(90deg, #2193b0 0%, #6dd5ed 100%);
+}
+
+.timeline-type.education {
+  background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%);
+}
+
+.timeline-type svg {
+  font-size: 1rem;
 }
 
 .about {
@@ -530,19 +553,19 @@ footer {
 .footer-socials {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 3rem;
   margin-bottom: 2rem;
 }
 
-.gradient-icon {
-  font-size: 1.5rem;
+.footer-socials-icon {
+  font-size: 1.7rem;
   color: #fff;
   display: inline-block;
   transition: color 0.2s;
 }
 
-.gradient-icon:hover {
-    transform: scale(1.2);
+.footer-socials-icon:hover {
+    transform: scale(0.95);
     opacity: 0.8;
   }
 
@@ -627,9 +650,8 @@ footer {
   transition: background 0.2s, color 0.2s;
 }
 .contact-submit:hover {
-  background: #242328;
-  color: #fff;
-  box-shadow: none;
+  transform: scale(0.95);
+  color: #1b1a1f;
 }
 .contact-success {
   color: #ffeb00;
@@ -734,17 +756,16 @@ footer {
     margin-left: 2rem !important;
   }
 
-  .timeline-company {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: left;
-    gap: 0.5rem;
+  .timeline-header {
+    margin-bottom: 0.8rem;
   }
 
   .timeline-type {
+    display: flex;
+  }
+
+  .timeline-company {
     display: block;
-    
   }
 
   .contact-form {

@@ -1,5 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { FaBriefcase } from 'react-icons/fa'
+import { MdSchool } from 'react-icons/md'
 
 interface WorkExperience {
   title: string;
@@ -102,10 +104,15 @@ const Experience = () => {
                 viewport={{ once: true }}
                 className={`timeline-vertical-entry ${item.type === 'work' ? 'left' : 'right'}`}
               >
-                <div className="timeline-title">{item.title}</div>
+                <div className="timeline-header">
+                  <div className="timeline-title">{item.title}</div>
+                  <span className={`timeline-type ${item.type}`}>
+                    {item.type === 'work' ? <FaBriefcase /> : <MdSchool />}
+                    {item.type}
+                  </span>
+                </div>
                 <div className="timeline-company">
                   {item.type === 'work' ? item.company : item.institution}
-                  <span className="timeline-type">{item.type}</span>
                 </div>
                 <div className="timeline-period">{item.period}</div>
                 <div className="timeline-desc">{item.description}</div>

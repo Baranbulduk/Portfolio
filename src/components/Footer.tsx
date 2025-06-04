@@ -9,29 +9,29 @@ const Footer = () => {
           <a href='mailto:baranbulduk99@gmail.com'
             target="_blank"
             rel="noopener noreferrer"
-            className="footer-link"
+            className="footer-socials-icon"
             aria-label="Email"
           >
-            <span className="gradient-icon"><FaEnvelope /></span>
+            <FaEnvelope />
           </a>
           <a
             href="https://github.com/baranbulduk"
             target="_blank"
             rel="noopener noreferrer"
-            className="footer-link"
+            className="footer-socials-icon"
             aria-label="GitHub"
           >
-            <span className="gradient-icon"><FaGithub /></span>
+            <FaGithub />
           </a>
 
           <a
             href="https://www.linkedin.com/in/baran-bulduk-000a74198"
             target="_blank"
             rel="noopener noreferrer"
-            className="footer-link"
+            className="footer-socials-icon"
             aria-label="LinkedIn"
           >
-            <span className="gradient-icon"><FaLinkedin /></span>
+            <FaLinkedin />
           </a>
         </div>
 
